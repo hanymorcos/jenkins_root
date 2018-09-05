@@ -9,7 +9,7 @@ node{
 
            def result = load pipelinescript
 
-           result.setOut(script:this)
+           result.setScript(script:this)
            result.success("test","test")
            result.print()
        }
