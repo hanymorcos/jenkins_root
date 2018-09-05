@@ -1,3 +1,4 @@
+package com.bcmc.xor
 import static groovy.json.JsonOutput.prettyPrint
 import static groovy.json.JsonOutput.toJson
 
@@ -53,4 +54,4 @@ public class PipelineResult{
     }
 }
 
-return this.PipelineResult
+return PipelineResult

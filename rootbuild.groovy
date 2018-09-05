@@ -9,7 +9,7 @@ node{
 
            def PipelineResult = load pipelinescript
 
-           result = new PipelineResult()
+           result = new  com.bcmc.xor.PipelineResult()
            result.setScript(this)
            result.success("test","test")
            result.print()
