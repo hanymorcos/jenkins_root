@@ -53,4 +53,4 @@ public class PipelineResult{
     }
 }
 
-return this.PipelineResult.class
+return this.PipelineResult
