@@ -6,9 +6,9 @@ class PipelineResult{
     def RESULTS_MAP = [:]
     def output
 
-    PipelineResult(out)
+    def setOut(out)
     {
-      output = out
+       output = out
     }
 
     def checkAndCreate(def item)
@@ -53,4 +53,4 @@ class PipelineResult{
     }
 }
 
-return this
+return new PipelineResult()
