@@ -8,8 +8,9 @@ node{
            cleanWs()
            checkout scm    // still needed, otherwise the following sh "git ..." commands will not work
 
-
-
+          def files = findFiles(glob: '*.*')
+          print files
+          
            result = new PipelineResult()
            result.setScript(this)
            result.success("test","test")
