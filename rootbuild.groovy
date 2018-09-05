@@ -7,8 +7,9 @@ node{
            checkout scm    // still needed, otherwise the following sh "git ..." commands will not work
 
 
-           def result = load pipelinescript
+           def PipelineResult = load pipelinescript
 
+           result = new PipelineResult()
            result.setScript(this)
            result.success("test","test")
            result.print()

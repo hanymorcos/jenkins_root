@@ -53,4 +53,4 @@ class PipelineResult{
     }
 }
 
-return new PipelineResult()
+return PipelineResult
