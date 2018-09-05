@@ -1,6 +1,6 @@
 
 
-import _jenkins.PipelineResult
+//import _jenkins.PipelineResult
 String pipelinescript = "_jenkins/PipelineResult.groovy"
 
 node{
@@ -10,7 +10,7 @@ node{
 
           def files = findFiles(glob: '*.*')
           print files
-          
+
            result = new PipelineResult()
            result.setScript(this)
            result.success("test","test")
