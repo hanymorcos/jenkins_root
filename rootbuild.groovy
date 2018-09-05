@@ -9,6 +9,7 @@ node{
 
            def result = load pipelinescript
 
+           result.setOut(getBinding().out)
            result.success("test","test")
            result.print()
        }
