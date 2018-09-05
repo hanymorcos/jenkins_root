@@ -9,11 +9,11 @@ node{
            checkout scm    // still needed, otherwise the following sh "git ..." commands will not work
 
           def files = findFiles(glob: '*.*')
-          print files
+          print "printing" . files
 
-           result = new PipelineResult()
-           result.setScript(this)
-           result.success("test","test")
-           result.print()
+        //   result = new PipelineResult()
+        //   result.setScript(this)
+        //   result.success("test","test")
+      //     result.print()
        }
 }
