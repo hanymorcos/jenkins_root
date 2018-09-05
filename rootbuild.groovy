@@ -1,7 +1,7 @@
 
 String pipelinescript = "_jenkins/PipelineResult.groovy"
 
-import _jenkins
+import jenkins_root._jenkins.PipelineResult
 
 node{
        stage('github checkout') {
@@ -10,7 +10,7 @@ node{
 
 
 
-           result = new _jenkins.PipelineResult()
+           result = new PipelineResult()
            result.setScript(this)
            result.success("test","test")
            result.print()
