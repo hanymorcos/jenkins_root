@@ -1,21 +1,18 @@
 
-
-//import _jenkins.PipelineResult
 String pipelinescript = "_jenkins/PipelineResult.groovy"
+
+import _jenkins.PipelineResult
 
 node{
        stage('github checkout') {
            cleanWs()
            checkout scm    // still needed, otherwise the following sh "git ..." commands will not work
 
-           sh "ls *.* > listJsonFiles"
-   def files = readFile( "listJsonFiles" ).split( "\\r?\\n" );
-   sh "rm -f listJsonFiles"
-          print "printing" . files
 
-        //   result = new PipelineResult()
-        //   result.setScript(this)
-        //   result.success("test","test")
-      //     result.print()
+
+           result = new _jenkins.PipelineResult.PipelineResult()
+           result.setScript(this)
+           result.success("test","test")
+           result.print()
        }
 }
