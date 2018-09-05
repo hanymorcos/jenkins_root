@@ -1,15 +1,16 @@
 
 String pipelinescript = "_jenkins/PipelineResult.groovy"
 
+import com.bcmc.xor.PipelineResult
+
 node{
        stage('github checkout') {
            cleanWs()
            checkout scm    // still needed, otherwise the following sh "git ..." commands will not work
 
 
-           def PipelineResult = load pipelinescript
 
-           result = new  com.bcmc.xor.PipelineResult()
+           result = new  PipelineResult()
            result.setScript(this)
            result.success("test","test")
            result.print()
