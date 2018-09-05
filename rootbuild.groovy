@@ -10,7 +10,7 @@ node{
 
 
 
-           result = new _jenkins.PipelineResult.PipelineResult()
+           result = new _jenkins.PipelineResult()
            result.setScript(this)
            result.success("test","test")
            result.print()
