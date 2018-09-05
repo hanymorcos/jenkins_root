@@ -1,4 +1,4 @@
-package com.bcmc.xor
+package _jenkins
 import static groovy.json.JsonOutput.prettyPrint
 import static groovy.json.JsonOutput.toJson
 
@@ -53,5 +53,3 @@ public class PipelineResult{
         return "FAIL${message? " (${message})" : ""}"
     }
 }
-
-return PipelineResult
