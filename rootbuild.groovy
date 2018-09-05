@@ -1,7 +1,7 @@
 
 String pipelinescript = "_jenkins/PipelineResult.groovy"
 
-pipeline{
+node{
        stage('github checkout') {
            cleanWs()
            checkout scm    // still needed, otherwise the following sh "git ..." commands will not work
