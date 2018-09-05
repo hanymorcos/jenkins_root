@@ -1,15 +1,15 @@
 
 String pipelinescript = "_jenkins/PipelineResult.groovy"
 
-node('maven') {
+pipeline{
        stage('github checkout') {
            cleanWs()
            checkout scm    // still needed, otherwise the following sh "git ..." commands will not work
 
 
-           def pipeline = load pipelinescript
+           def result = load pipelinescript
 
-           pipeline.success("test","test")
-           pipeline.print()
+           result.success("test","test")
+           result.print()
        }
 }
