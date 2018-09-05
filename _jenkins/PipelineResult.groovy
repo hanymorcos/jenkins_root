@@ -1,7 +1,7 @@
 import static groovy.json.JsonOutput.prettyPrint
 import static groovy.json.JsonOutput.toJson
 
-class PipelineResult{
+public class PipelineResult{
 
     def RESULTS_MAP = [:]
     Script parent_script
@@ -53,4 +53,4 @@ class PipelineResult{
     }
 }
 
-return PipelineResult.class
+return PipelineResult
