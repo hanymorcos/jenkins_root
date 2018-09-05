@@ -4,11 +4,9 @@ import static groovy.json.JsonOutput.toJson
 class PipelineResult{
 
     def RESULTS_MAP = [:]
-    def output
 
-    PipelineResult(out)
+    PipelineResult()
     {
-        output = out
     }
 
     def checkAndCreate(def item)
@@ -54,4 +52,4 @@ class PipelineResult{
 }
 
 
-return this
+return new PipelineResult();
