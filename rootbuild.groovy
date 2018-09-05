@@ -10,7 +10,7 @@ node{
 
 
 
-           result = new  PipelineResult()
+           result = new PipelineResult()
            result.setScript(this)
            result.success("test","test")
            result.print()
