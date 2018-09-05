@@ -8,7 +8,9 @@ node{
            cleanWs()
            checkout scm    // still needed, otherwise the following sh "git ..." commands will not work
 
-          def files = findFiles(glob: '*.*')
+           sh "ls *.json > listJsonFiles"
+   def files = readFile( "listJsonFiles" ).split( "\\r?\\n" );
+   sh "rm -f listJsonFiles"
           print "printing" . files
 
         //   result = new PipelineResult()
