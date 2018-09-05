@@ -54,4 +54,4 @@ class PipelineResult{
 }
 
 
-return new PipelineResult(print);
+return new PipelineResult(getBinding().out);
