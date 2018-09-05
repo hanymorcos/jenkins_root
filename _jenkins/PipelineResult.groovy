@@ -4,11 +4,11 @@ import static groovy.json.JsonOutput.toJson
 class PipelineResult{
 
     def RESULTS_MAP = [:]
-    def output
+    def print
 
-    def setOut(out)
+    def setPrint(in_print)
     {
-       output = out
+       print = in_print
     }
 
     def checkAndCreate(def item)
@@ -36,7 +36,7 @@ class PipelineResult{
 
     def print()
     {
-        output "Results: ${RESULTS_MAP ? prettyPrint(toJson(RESULTS_MAP)) : "null"}"
+        print "Results: ${RESULTS_MAP ? prettyPrint(toJson(RESULTS_MAP)) : "null"}"
 
     }
 
