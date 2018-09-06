@@ -1,6 +1,6 @@
 
 String pipelinescript = "_jenkins/PipelineResult.groovy"
-@Library("mylib")
+@Library("mylib@release")
 import _jenkins.PipelineResult
 
 node{
