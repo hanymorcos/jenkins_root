@@ -1,5 +1,5 @@
 
-@Library("mylib@v2.0")
+@Library("mylib@v3.0")
 import xor.bcmc.jenkins.PipelineResult
 
 node{
