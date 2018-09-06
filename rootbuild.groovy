@@ -1,7 +1,7 @@
 
 String pipelinescript = "_jenkins/PipelineResult.groovy"
 
-import jenkins_root._jenkins.PipelineResult
+import _jenkins.PipelineResult
 
 node{
        stage('github checkout') {
